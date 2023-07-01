@@ -2,10 +2,11 @@ Curso de angular realizado no youtube pelo canal **Matheus Battisti - Hora de Co
 
 ## Para acessar a playlist [clique aqui](https://www.youtube.com/playlist?list=PLnDvRpP8Bnex2GQEN0768_AxZg_RaIGmw)
 
-Para executar utilize dois terminais e execute os dois seguintes comandos:
+Para executar utilize o comando:
 
-- `npm run serve`
-- `ng serve`
+- `npm run start`
+
+O npm irá os comandos para subir o frontend e o backend simultaneamente usando a biblioteca concurrently.
 
 ---
 
