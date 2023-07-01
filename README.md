@@ -36,6 +36,6 @@ Para acessar a playlist das video aulas, [clique aqui](https://www.youtube.com/p
 
 Na raiz do projeto execute o seguinte comando:
 
-`npm run start`
+`npm run dev`
 
 O npm irá os comandos para subir o frontend e o backend simultaneamente.
