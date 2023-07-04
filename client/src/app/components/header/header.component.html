@@ -1,11 +1,17 @@
-<p>header works!</p>
 <nav>
-  <ul>
+  <a class="brand" routerLink="/">
+    <img src="/assets/imgs/logo.png" alt="Moments" />
+    <h2>Moments</h2>
+  </a>
+  <ul class="links">
     <li>
-      <a routerLink="/"> Home </a>
+      <a routerLink="/">Home</a>
+    </li>
+    <li id="add">
+      <a routerLink="/moments/new">Compartilhar</a>
     </li>
     <li>
-      <a routerLink="/about"> Sobre </a>
+      <a routerLink="/about">Sobre</a>
     </li>
   </ul>
 </nav>
