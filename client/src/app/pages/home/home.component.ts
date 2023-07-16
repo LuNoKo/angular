@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { Moment } from 'src/app/interfaces/Moment';
 import { MomentService } from 'src/app/services/moment/moment.service';
 import { environment } from 'src/environments/environment';
@@ -13,7 +14,8 @@ export class HomeComponent implements OnInit {
   moments: Moment[] = [];
   baseApiUrl = environment.baseApiUrl;
 
-  // todo search
+  faSearch = faSearch;
+  searchTerm: string = '';
 
   constructor(private momentService: MomentService) {}
 
@@ -30,5 +32,13 @@ export class HomeComponent implements OnInit {
       this.allMoments = data;
       this.moments = data;
     });
+  }
+
+  search(e: any): void {
+    const value = (e.target as HTMLInputElement).value;
+
+    this.moments = this.allMoments.filter((moment) =>
+      moment.title.toLowerCase().includes(value)
+    );
   }
 }
