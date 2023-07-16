@@ -20,4 +20,9 @@ export class MomentService {
   createMoment(formData: FormData) {
     return this.http.post<FormData>(this.apiUrl, formData);
   }
+
+  getMoment(id: number) {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Response<Moment>>(url);
+  }
 }
